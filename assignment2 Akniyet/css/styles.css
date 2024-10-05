@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #FFEFEF;
+    color: #7C99AC;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #7C99AC;
+    color: #D3DEDC;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: 'Dancing Script', cursive;
+    transition: color 1s ease;
+}
+
+header h1:hover {
+    color: #1abc9c;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #FFEFEF;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hobbies ul {
+        flex-direction: column;
+    }
+
+    .hobby-card {
+        width: 100%;
+    }
+}
+
+#hobbies h2::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #7C99AC;
+    margin: 10px auto;
+}
+
+#hobbies ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+#hobbies li {
+    flex: 1;
+    text-align: center;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+#hobbies img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#hobbies li:hover img {
+    transform: scale(1.1);
+}
+
+/* Table styles */
+#facts table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#facts table, #facts th, #facts td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#facts th {
+    background-color: #92A9BD;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#facts td {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Custom buttons in footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #7C99AC;
+    color: white;
+}
+
+footer .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D3DEDC;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+footer .button:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
