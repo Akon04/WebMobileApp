@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('images/newbackground.png'); /* Замените на путь к вашему изображению */
+  background-size: cover; /* Изображение будет масштабироваться по размеру экрана */
+  background-position: center; /* Изображение будет по центру */
+  background-repeat: no-repeat; /* Изображение не будет повторяться */
+  }
+  
+  .game-container {
+    text-align: center;
+  }
+  
+  .dice-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .dice-container img {
+    width: 100px;
+    margin: 0 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
