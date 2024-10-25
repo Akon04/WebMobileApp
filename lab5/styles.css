@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #25a3a31a;
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.xylophone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.key {
+    width: 75px;
+    height: 220px;
+    border-radius: 20px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+.key:active {
+    transform: translateY(-10px);
+}
+
+#keyC { background-color: #ff0000; }
+#keyD { background-color: #ff8000; }
+#keyE { background-color: #ffff00; }
+#keyF { background-color: #80ff00; }
+#keyG { background-color: #00ff80; }
+#keyA { background-color: #0080ff; }
+#keyB { background-color: #8000ff; }
