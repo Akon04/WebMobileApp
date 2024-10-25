@@ -5,10 +5,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('images/newbackground.png'); /* Замените на путь к вашему изображению */
-  background-size: cover; /* Изображение будет масштабироваться по размеру экрана */
-  background-position: center; /* Изображение будет по центру */
-  background-repeat: no-repeat; /* Изображение не будет повторяться */
+    background-image: url('images/newbackground.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
   }
   
   .game-container {
