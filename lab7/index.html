@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Hero</title>
+    <style>
+        body {
+            background: radial-gradient(circle, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #ee9b00;
+            font-family: 'Georgia', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        #hero-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 300px; 
+            padding: 15px; 
+            background: #005f73;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            color: #fafaf9;
+        }
+
+        #hero-image {
+            width: 180px; 
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        #hero-details {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            font-size: 0.9em; 
+        }
+
+        .hero-stat {
+            margin: 4px 0;
+            line-height: 1.4;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 8px 12px;
+            background-color: #bb3e03;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ca6702;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Random Hero</h1>
+    <div id="hero-box">
+        <img id="hero-image" src="" alt="Superhero Image">
+        <div id="hero-details">
+            <h2 id="hero-name">Hero Name</h2>
+            <p id="hero-universe">Universe: Unknown</p>
+            <p id="hero-stats" class="hero-stat">Random Stats Appear Here</p>
+        </div>
+    </div>
+
+    <button onclick="displayRandomHero()">Discover a New Hero</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
